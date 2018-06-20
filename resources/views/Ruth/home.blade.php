@@ -25,6 +25,6 @@
   </div>
 </nav>
 <br/>
-<p><strong>Welcome to the homepage</strong></p>
+<p style="font-size:36px;"><strong>Welcome to the homepage</strong></p>
 </body>
 </html>
