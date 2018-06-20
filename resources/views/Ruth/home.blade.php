@@ -24,5 +24,7 @@
     </ul>
   </div>
 </nav>
+<br/>
+<p><strong>Welcome to the homepage</strong></p>
 </body>
 </html>
