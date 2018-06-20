@@ -22,12 +22,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <br>
-<div class="container">
-    <h3>Links</h3>
-    <a href="/student">Register Student</a>
-    <br>
-    <a href="/fees">Add Fees Payment</a>
-</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/student">Student</a></li>
+      <li><a href="/fees">Fees</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
 </body>
 </html>
