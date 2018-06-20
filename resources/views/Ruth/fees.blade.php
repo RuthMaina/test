@@ -2,20 +2,24 @@
 
 <head>
     <title>Fees Form</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="/student">Student</a></li>
+      <li><a href="/fees">Fees</a></li>
+      <li><a href="/searchPage">Search</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
     <h3 align="center">Fee Payment Details</h3>
     <!--Validation error message-->
@@ -28,15 +32,6 @@
         </ul>
     </div>
     @endif
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/searchPage">Search Student</a></li>
-                </ul>
-            </div>
-        </nav>
 
     <form class="form-horizontal" action="/fees/store" method="post" style="margin: 0 auto; width: 75%; text-align: left;">
         {{@csrf_field()}}
